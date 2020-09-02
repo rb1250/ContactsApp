@@ -48,26 +48,26 @@ public typealias ImageDownloadCompletionClosure = (_ imageData: NSData ) -> Void
 
 // MARK: - #3 - App data through ViewModel
 
-var messierViewModel: [MessierViewModel] = []
+var contactViewModel: [ContactViewModel] = []
 
 // MARK: - #4 - View Model
 
-class MessierViewModel
+class ContactViewModel
 {
     
     // #5 - I use some private properties solely for
     // preparing data for presentation in the UI.
     
-    private let messierDataModel: MessierDataModel
+    private let contactDataModel: ContactDataModel
     
 //    private var imageURL: URL
     
     private var updatedDate: Date?
     
-    init(messierDataModel: MessierDataModel)
+    init(contactDataModel: ContactDataModel)
     {
-        self.messierDataModel = messierDataModel
-//        self.imageURL = URL(string: messierDataModel.imageLink) ?? ""
+        self.contactDataModel = contactDataModel
+//        self.imageURL = URL(string: contactDataModel.imageLink) ?? ""
     }
     
     // #6 - Data is made available for presentation only
@@ -75,18 +75,18 @@ class MessierViewModel
     // Some getters prepare data for presentation.
 
     public var formalName: String {
-        return "Formal name: " + messierDataModel.formalName
+        return "Formal name: " + contactDataModel.formalName
     }
     
     public var commonName: String {
-        return "Common name: " + messierDataModel.commonName
+        return "Common name: " + contactDataModel.commonName
     }
     
     public var dateUpdated: String {
         
-        let dateString = String(messierDataModel.updateDate.year) + "-" +
-                         String(messierDataModel.updateDate.month) + "-" +
-                         String(messierDataModel.updateDate.day)
+        let dateString = String(contactDataModel.updateDate.year) + "-" +
+                         String(contactDataModel.updateDate.month) + "-" +
+                         String(contactDataModel.updateDate.day)
         
         let dateFormatterGet = DateFormatter()
         dateFormatterGet.dateFormat = "yyyy-MM-dd"
@@ -107,13 +107,13 @@ class MessierViewModel
     public var textDescription: NSAttributedString {
         
         let fontAttributes = [NSAttributedString.Key.font:  UIFont(name: "Georgia", size: 14.0)!, NSAttributedString.Key.foregroundColor: UIColor.blue]
-        let markedUpDescription = NSAttributedString(string: messierDataModel.description, attributes:fontAttributes)
+        let markedUpDescription = NSAttributedString(string: contactDataModel.description, attributes:fontAttributes)
         return markedUpDescription
         
     }
     
     public var thumbnail: String {
-        return messierDataModel.thumbnail
+        return contactDataModel.thumbnail
     }
     
     // #8 - Controversial? Is passing a completion handler into the view
@@ -143,4 +143,4 @@ class MessierViewModel
 //
 //    } // end func download
 
-} // end class MessierViewModel
+} // end class contactViewModel

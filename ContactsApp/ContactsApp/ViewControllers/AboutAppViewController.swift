@@ -2,7 +2,7 @@
 //  AboutAppViewController.swift
 //  MVVM2
 //
-//  Created by Andrew L. Jaffee on 5/18/18.
+//  Created by Ruchika Bokadia on 31/08/20.
 //
 /*
  

@@ -1,29 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Urk-jj-awc">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Messier Objects-->
+        <!--contact Objects-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController autoresizesArchivedViewToFullSize="NO" id="BYZ-38-t0r" customClass="ViewController" customModule="ContactsApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OAz-SC-7gJ">
-                                <rect key="frame" x="0.0" y="44" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="44" width="600" height="536"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" editingAccessoryType="disclosureIndicator" textLabel="eas-1p-49T" detailTextLabel="oGv-GG-eqd" style="IBUITableViewCellStyleSubtitle" id="0FF-vw-OjS">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="55.5"/>
+                                        <rect key="frame" x="0.0" y="28" width="600" height="55.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0FF-vw-OjS" id="LMT-7o-Jlj">
-                                            <rect key="frame" x="0.0" y="0.0" width="349" height="55.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="574" height="55.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eas-1p-49T">
@@ -58,7 +57,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Messier Objects" id="U3J-W5-tdw">
+                    <navigationItem key="navigationItem" title="contact Objects" id="U3J-W5-tdw">
                         <barButtonItem key="rightBarButtonItem" title="About" image="appInfo" id="5Dx-Pm-dz0">
                             <connections>
                                 <segue destination="83i-Gb-nps" kind="show" id="Wpb-fm-3hI"/>
@@ -73,44 +72,44 @@
             </objects>
             <point key="canvasLocation" x="936.79999999999995" y="117.39130434782609"/>
         </scene>
-        <!--Messier Detail-->
+        <!--contact Detail-->
         <scene sceneID="48W-9h-OJu">
             <objects>
                 <viewController id="rAw-Fl-T0W" customClass="DetailViewController" customModule="ContactsApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="47N-mF-Zcc">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RBb-ab-BW0">
-                                <rect key="frame" x="170.5" y="84" width="34" height="21"/>
+                                <rect key="frame" x="283" y="84" width="34" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yQk-JV-X5d">
-                                <rect key="frame" x="158" y="113" width="59" height="21"/>
+                                <rect key="frame" x="270.5" y="113" width="59" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TEg-0Y-EmQ">
-                                <rect key="frame" x="37" y="347" width="300" height="300"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TEg-0Y-EmQ">
+                                <rect key="frame" x="37" y="347" width="525" height="300"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="TEg-0Y-EmQ" secondAttribute="height" multiplier="1:1" id="OVa-Vr-df6"/>
                                 </constraints>
                             </imageView>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="voE-kW-X3J">
-                                <rect key="frame" x="169" y="479" width="37" height="37"/>
+                                <rect key="frame" x="169" y="412" width="262" height="37"/>
                                 <color key="color" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </activityIndicatorView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Updated" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sk0-RH-z0S">
-                                <rect key="frame" x="159.5" y="142" width="56" height="17"/>
+                                <rect key="frame" x="272" y="142" width="56" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dwW-ZV-xPu">
-                                <rect key="frame" x="16" y="167" width="343" height="172"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dwW-ZV-xPu">
+                                <rect key="frame" x="16" y="167" width="568" height="172"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -137,7 +136,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="z7n-GI-aOM"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Messier Detail" id="6xb-IN-0Ek"/>
+                    <navigationItem key="navigationItem" title="contact Detail" id="6xb-IN-0Ek"/>
                     <connections>
                         <outlet property="activitySpinner" destination="voE-kW-X3J" id="OOr-Z0-eg2"/>
                         <outlet property="descriptionTextView" destination="dwW-ZV-xPu" id="taC-d2-bzw"/>
@@ -156,21 +155,21 @@
             <objects>
                 <viewController title="About" id="83i-Gb-nps" customClass="AboutAppViewController" customModule="ContactsApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ojw-jE-WlW">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7FR-nK-1hp">
-                                <rect key="frame" x="16" y="52" width="343" height="128"/>
+                                <rect key="frame" x="16" y="52" width="568" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="EaK-g4-5AX"/>
                                 </constraints>
-                                <string key="text">"Hubble’s Messier Catalog" is a website maintained by NASA. It is mainly a pictorial catalog of Messier objects, like globular clusters and nebulae. The catalog is a series of pages, each dedicated to one of the Messier objects. You can browse through these stellar objects and find interesting facts as well as beautiful imagery.</string>
+                                <string key="text">"Hubble’s contact Catalog" is a website maintained by NASA. It is mainly a pictorial catalog of contact objects, like globular clusters and nebulae. The catalog is a series of pages, each dedicated to one of the contact objects. You can browse through these stellar objects and find interesting facts as well as beautiful imagery.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="owd-bD-6uE">
-                                <rect key="frame" x="62.5" y="188" width="250" height="30"/>
+                                <rect key="frame" x="175" y="188" width="250" height="30"/>
                                 <state key="normal" title="See NASA's Media Usage Guidelines"/>
                                 <connections>
                                     <action selector="guidelinesButtonTapped:" destination="83i-Gb-nps" eventType="touchUpInside" id="ffL-kZ-fg8"/>
